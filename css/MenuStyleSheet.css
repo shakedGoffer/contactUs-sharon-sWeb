@@ -55,7 +55,6 @@
 	  left: 0;
 	  display: none;
 	  margin-top:11px;
-	 
 	  background-color:white;
 	}
 	
@@ -215,15 +214,14 @@
 
 		#navMenu 
 		{
-			position:absolute;
 			min-height: 100vh;
 			right:0px;
 			float:right;
 			position: fixed;
-			height: 100%;
 			width: 100%;
 			margin:0px;
-			z-index:10;
+			z-index: 10;
+			
 		}
 		
 		#navMenu .bg
@@ -232,7 +230,7 @@
 		  position: fixed;
 		  left: 0;
 		  width: 100%;
-		  height: calc(100% - 70px);
+		  height: calc(100% - 10px);
 		  visibility: hidden;
 		  opacity: 0;
 		  transition: .3s;
@@ -249,16 +247,15 @@
 		}
 
 		
-		.button
+		#navMenu .button
 		 {
-			position: absolute;
-			float:right;
+		  position: absolute;
+		  float:right;
 		  display: flex;
-			top:10px;
-			right:0px;
+		  right:0px;
 		  flex-direction: column;
 		  justify-content: center;
-		  z-index: 1;
+		  z-index: 10;
 		  -webkit-appearance: none;
 		  border: 0;
 		  background: transparent;
@@ -266,11 +263,14 @@
 		  height: 20px;
 		  width: 20px;
 		  cursor: pointer;
-		  pointer-events: auto;
 		  margin-right: 25px;
-		  touch-action: manipulation;
+		  top:10px;
 		  -webkit-tap-highlight-color: rgba(0,0,0,0);
+		   position: absolute;
+		 
 		}
+		
+		
 		.icon-bar {
 		  display: block;
 		  width: 100%;
@@ -284,7 +284,7 @@
 
 		#navMenu:focus-within .button 
 		{
-		  pointer-events: none;
+		  pointer-events:  none;
 		}
 		#navMenu:focus-within .icon-bar:nth-of-type(1) 
 		{
@@ -303,6 +303,7 @@
 		{
 		  margin-top:85px;
 		  font-weight: 600;
+		  height: 100%;
 		  /*font-family: 'Encode Sans Condensed', sans-serif;*/
 		 
 		  padding: 20px;
@@ -311,7 +312,7 @@
 		  position: absolute;
 		  top: 0;
 		  right: 0;
-		  height: calc(100% - 70px);
+		  height: calc(100% - 10px);
 		  background: #ececec;
 		  pointer-events: auto;
 		  -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -402,6 +403,7 @@
 			font-size: 12px;
 			font-weight: 400;
 			color: #888;
+			
 		}
 
 		.small 
@@ -414,6 +416,7 @@
 			margin-right:10px;
 			text-align: right !important;
 			padding: 0px ;
+			
 		}
 
 		.small a {
@@ -422,7 +425,6 @@
 		  color: #888;
 		  padding: 15px 5px;
 		  display: block;
-		 
 		}
 		.small a + a {
 		  margin-left: 15px;
@@ -464,6 +466,22 @@
 		#details,#nav-content {margin-top:65px;}
 		header { height: 65px;}
 		#navMenu .bg	{ top:65px;}
+		#navMenu .button{ margin-right: 20px;}
+		
+		/*
+		@media (min-height: 500px) 
+		{
+			#details{margin-top:105px;}
+			header {height: 105px;}
+			#nav-content { margin-top:150px;}
+		}
+			*/
 		
 	}
+	
+	@media (max-width:350px)
+	{
+		#navMenu .button{ margin-right: 10px;}
+	}
+	
 	

@@ -49,8 +49,8 @@
 .testim .dots .dot{
     list-style-type: none;
     display: inline-block;
-    width: 11px;
-    height: 11px;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     border: 1px solid black;
     margin: 0 10px;
@@ -98,8 +98,9 @@ border-color: #009ee2;
 .testim .wrap h1
 {
 	color: black ;
-    font-size: 2em;
+    font-size: 1.8em;
 	margin-right:30px;
+	padding-bottom:20px;
 }
 .testim .cont div h2{
     color: #009ee2;
@@ -109,7 +110,7 @@ border-color: #009ee2;
 .testim .cont div p{
     font-size: 1.45em;
     color: black;
-    width: 80%;
+    width: 60%;
     margin: auto;
 }
 
@@ -192,22 +193,29 @@ border-color: #009ee2;
 
 @media all and (max-width: 900px) {
     .testim .arrow{
-        font-size: 1.4rem;
+        font-size: 1.4em;
     }
 	
-	.testim .wrap h1{ font-size: 1.8em;}
-	.testim .cont div h2{font-size: 1em;}
-	.testim .cont div p{font-size: 1.2em;}
+	.testim .wrap h1{ font-size: 1.2em; padding-bottom:10px;}
+	.testim .cont div h2{font-size: 0.8em;}
+	.testim .cont div p{font-size: 1em;}
 	.testim .dots .dot{
-		width: 9px;
-		height: 9px;
+		width: 7px;
+		height: 7px;
+	}
+	
+	.testim .wrap{
+    padding: 15px 5px 5px 5px;
 	}
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 350px) {
     .testim .arrow{
-        font-size: 1.5rem;
+        font-size: 1.2em;
     }
+	.testim .wrap h1{ font-size: 1em;}
+	.testim .cont div h2{font-size: 0.9em;}
+	.testim .cont div p{font-size: 0.8em;}
     .testim .cont div p{
         line-height: 25px;
     }

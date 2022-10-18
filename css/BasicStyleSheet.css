@@ -95,7 +95,7 @@
 		text-align: center;
 		color:blue;
 		font-size:17px;
-		width:50%;
+		width:80%;
 		overflow: auto;
 		margin: auto;
 		padding-bottom:2px;
@@ -166,7 +166,7 @@
 	@media (max-width:700px)
 	{
 		header .topick {font-size:30px; width:80%;}
-		header #name {font-size:13px;}
+		header #name {font-size:18px;}
 		header .iconImg
 		{
 			display:none;
@@ -176,21 +176,33 @@
 	@media (max-width:500px)
 	{
 		header .topick {font-size:27px; }
-		header #name {font-size:10px;}
+		header #name {font-size:13px;}
 	}
 	
 	@media (max-width:400px)
 	{
-		header .topick {font-size:23px;}
-		header #name {font-size:9px;}
+		header .topick {font-size:24px;}
 		
 	}
 	
 	@media (max-width:350px)
 	{
 		header .topick {font-size:22px;}
-		header #name {font-size:8px;}
+		header #name {font-size:10;}
 	}
 
+	@media (max-width:300px)
+	{
+
+		
+		@media (max-height: 750px) 
+		{
+			header .topick {font-size:21px;  width: 85%;}
+		header #name { width: 90%;}
+
+		}
+		
+		
+	}
 	
 	

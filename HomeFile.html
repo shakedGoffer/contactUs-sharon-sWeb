@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <meta https-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+   <!-- title bar icon  -->
+    <link rel = "icon" href ="img/logo2.jpg" type = "image/x-icon">
+  <!--author-->
+   <meta name="author" content="Sharon anavi goffer | שרון ענבי גופר"/>
+  <!--description-->
+  <media name="description" content="dslklmdsksldkmd"/> 
+   <!--web title-->
+  <title dir="rtl" >ייעוץ בריאותי מותאם אישית | עמוד בית</title>
+  
+    <!--StyleSheets-->
+   <link href="css/BasicStyleSheet.css" rel="StyleSheet">  <!--BasicStyleSheet: tags:header. class:circular_image,center  -->
+   <link href="css/MenuStyleSheet.css" rel="StyleSheet">  <!--MenuStyleSheet: tags:header- menu,li,a -->
+   <link href="css/FooterStyleSheet.css" rel="StyleSheet">  <!--FooterStyleSheet: footer -->
+   <link href="css/TestimonialsStyleSheet.css" rel="StyleSheet">  <!--FooterStyleSheet: testimonials -->
+   
+   
+      <!-- icons -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+   
+   <!--style-->
+  <style>
+	
+		div#bgDetails
+		{
+			background-image: url("img/divBackground.png");
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: table;
+			width: 100%;
+			height: 110vh;
+			max-height: 120%;
+			overflow: hidden;
+		}
+		
+	
+		#bgDetails li.listItem
+		{
+			/*font-family: cursive;*/
+			font-size:2.2em;
+			margin-bottom:40px;
+			margin-right:60px;
+			padding-left:5px;
+			width: 85%;
+			direction:rtl;
+			list-style-image: url('img/ic_corect.png');
+			text-align: right !important;
+		}
+		
+		#bgDetails #detailsListWraper
+		{
+			overflow: auto;
+			margin: auto;
+			padding-right:5px;
+			width: 60%;
+			height: 100%;
+			background-color: rgb(200, 232, 233,0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		
+		
+		/* Media Queries */
+		
+		@media (max-width:1360px)
+		{
+			#details li.listItem
+			{
+				font-size:2em;
+				margin-bottom:30px;
+				margin-right:70px;
+				list-style-image: url('img/ic_corectSmall.png');
+			}
+			
+			@media (max-height: 1400px) 
+			{
+				div#bgDetails
+				{
+					max-height: 60%;
+					height: 60vh;
+				}
+			}			
+			@media (max-height: 800px) 
+			{
+				div#bgDetails
+				{
+					max-height: 90%;
+					height: 90vh;
+				}
+			}
+			@media (max-height: 600px) 
+			{
+				div#bgDetails
+				{
+					max-height: 80%;
+					height: 80vh;
+				}
+			}
+		}
+		
+		@media screen and(max-width:900px)
+		{
+			#details li.listItem
+			{
+				font-size:1.7em;
+				margin-bottom:20px;
+				margin-right:50px;
+			}
+			
+			@media (min-height: 600px) 
+			{
+				div#bgDetails
+				{
+					max-height: 70%;
+					height: 70vh;
+					
+				}
+			}
+			
+			
+			
+		}
+		
+		@media (max-width:600px)
+		{
+			#bgDetails #detailsListWraper {width: 65%;}
+			@media (max-height: 700px) 
+			{
+				#details li.listItem
+				{
+					font-size:1.5em;
+					margin-bottom:15px;
+					width: 75%;
+					
+				}
+			}
+			
+		}
+		
+		@media (max-width:450px)
+		{
+		
+			
+			
+			#details li.listItem
+			{
+				font-size:1.2em;
+				margin-bottom:15px;
+				
+			}
+			
+			@media (max-height: 950px) 
+			{
+				div#bgDetails
+				{
+					max-height: 50%;
+					height: 50vh;
+				}
+				#bgDetails #detailsListWraper{padding-right:10px;}
+		
+			}
+
+			@media (max-height: 600px) 
+			{
+				div#bgDetails
+				{
+					max-height: 70%;
+					height: 70vh;
+				}
+			}
+			
+			@media (max-height: 550px) 
+			{
+				#bgDetails #detailsListWraper {width: 75%;}
+			}
+		}
+		
+		@media (max-width:380px)
+		{
+			#details li.listItem
+			{
+				font-size:1em;
+				margin-bottom:12px;
+				
+			}
+			
+			@media (max-height: 900px) 
+			{
+				div#bgDetails
+				{
+					max-height: 60%;
+					height: 60vh;
+				}
+				#bgDetails #detailsListWraper{padding-right:11px;}
+		
+			}
+			
+			@media (max-height: 750px) 
+			{
+				div#bgDetails
+				{
+					max-height: 50%;
+					height: 50vh;
+				}
+				#bgDetails #detailsListWraper{padding-right:12px;}
+		
+			}
+			
+			@media (max-height: 650px) 
+			{
+				div#bgDetails
+				{
+					max-height: 60%;
+					height: 60vh;
+				}
+				#bgDetails #detailsListWraper{padding-right:12px;}
+		
+			}
+			
+		}
+		
+		@media (max-width:300px)
+		{
+			#details li.listItem
+			{
+				font-size:0.9em;
+				margin-bottom:10px;
+				
+			}
+			
+			
+			@media (max-height: 750px) 
+			{
+				div#bgDetails
+				{
+					max-height: 60%;
+					height: 60vh;
+				}
+				#bgDetails #detailsListWraper{width: 70%;}
+		
+			}
+			
+		}
+
+ </style>
+
+  
+</head>
+
+
+
+<body>
+  
+ <!--header-->
+  <header>
+	 <img class="iconImg" src="img/logo.png"/>
+	<div class="topick">ייעוץ בריאותי מותאם אישית</div>
+	<div id="name">
+		<a  dir="rtl" class="phone" href="tel:054-323-1673">  
+		<i class="fa fa-phone"></i> 
+		0543231673</a>
+		&nbsp;&nbsp; Ph.D. ד"ר שרון ענבי-גופר </div>
+		
+  </header>
+  
+  <nav id="navMenu">
+    <div class="bg"></div>
+    <nav class="button" id="button" tabindex="0">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </nav>
+	
+    <div id="nav-content" tabindex="0">
+	<ul id="menu">
+		<li class="small center"><a href="#0">Facebook</a><a href="#0">Linkedin</a></li>
+		<li   class="menuItem">
+			<a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/TreatmentsFile.html" > <i id="icDropdownMenu" class="fas fa-caret-down"></i>ייעוץ</a>
+			
+			<ul id="dropdownMenu"> <!--dropdown menu-->
+				<li class="dropdownMenuItem" > <a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/Treatments_covidFile.html" >פוסט קורונה</a> </li>
+				<li class="dropdownMenuItem"> <a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/Treatments_constipationFile.html" >עצירות</a> </li>
+			</ul>
+			
+		</li>
+		<li  class="menuItem"> <a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/ConectUsFile.html" >צור קשר</a></li>
+		<li   class="menuItem"> <a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/AboutFile.html" >אודותיי</a></li>
+		<li  id ="selectedItem" class="menuItem"> <a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/HomeFile.html" >עמוד בית</a></li>
+	</ul>
+		
+    </div>
+  </nav>
+  
+  
+  <!--wraperDiv-->
+  <div id="wraper">
+	  <section id="details">
+		  <div id="bgDetails">
+		  <div id="detailsListWraper">
+			<ul id="detailsList">
+				<li class="listItem" id ="words1">איזון בין מערכות הגוף השונות לבין תהליכים פסיכולוגיים ופיזיולוגיים</li>
+				<li class="listItem" id ="words2">תזונה נכונה ומותאמת אישית</li>
+				<li class="listItem" id ="words3" >גישה רב-תחומית תזונה פרמקולוגיה אימונולוגיה אנדוקרינולוגיה מדעי המוח וגנטיקה</li>
+			</ul>
+		  </div>
+		  </div>
+		  
+<!-- TESTIMONIALS -->
+		<section class="testim" id="testim">
+			<div class="wrap">
+				<h1 dir="rtl" >לקוחות מספרים:</h1>
+				
+				<span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+				<span id="left-arrow" class="arrow left fa fa-chevron-left"></span>
+
+				<ul class="dots" id="testim-dots">
+					<li class="dot active"></li>
+					<li class="dot"></li>
+					<li class="dot"></li>
+					<li class="dot"></li>
+					 <!--TESTIMONIAL 5 <li class="dot"></li> -->
+					
+				</ul>
+
+				<div dir="rtl" class="cont" id="testim-content">
+				
+					 <!--TESTIMONIAL 1 -->
+					<div class="active">
+						<h2>פ.</h2>
+						<p>"תודה רבה מקרב לב על ההקשבה והתמיכה שקיבלתי ממך,אני מאוד מעריכה את הזמן והטיפים שהקדשת לי, 
+						  את אישה מיוחדת מאוד"</p>
+					</div>
+					
+					 <!--TESTIMONIAL 2 -->
+					<div>
+						<h2>ת.</h2>
+						<p>"השיחה שלנו אתמול הניעה משהו פנימי, והשיקוף של המצב שלי דרך העיניים שלך בהחלט זעזע משהו שיביא לתנועה ולשינוי, 
+							זה נהדר וזה יביא לתוצאות"</p>
+					</div>
+					
+					 <!--TESTIMONIAL 3 -->
+					<div> 
+						<h2>ש.</h2>
+						<p>"תודה לך על דבריך המרגשים. השיחה אתך היום הייתה לי חוויה נעימה ומחכימה, למדתי ממך רבות 
+							ומקווה שתואילי לסייע לי גם בהמשך הדרך"</p>
+					</div>
+					
+					 <!--TESTIMONIAL 4 -->
+					<div>
+						<h2>ד.</h2>
+						<p>"הייתי בתחתית, דלית אותי מהמים העמוקים, מלמטה, נתת לי עוגן, סדר, בתקופה שבה נטרפתי וזה הרים אותי. עכשיו התייצבתי ואני יכולה ללכת לבד. 
+							זה נותן לי תקווה"</p>
+					</div>
+				
+					
+					 <!--TESTIMONIAL 5 
+					<div>
+						<div class="img"><img src="https://e7.pngegg.com/pngimages/178/595/png-clipart-user-profile-computer-icons-login-user-avatars-monochrome-black-thumbnail.png"></div> 
+						<h2>Lorem Q. Ipsum</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quasi aliquid vel voluptatum
+							deleniti! Corrupti velit, porro facere facilis laboriosam accusantium, eos beatae maiores.</p>
+					</div>
+					-->
+					
+				</div>
+
+			</div>
+		</section>
+    <!-- END OF TESTIMONIALS -->
+	
+	 </section>
+  </div>
+  
+  <script type="text/javascript">
+  
+  
+      (function () 
+	  {
+        var words1 = ["איזון בין מערכות הגוף השונות לבין תהליכים פסיכולוגיים ופיזיולוגיים","מתן כלים ייחודיים ופתרונות טכנולוגיים","ייעוץ למחלות אקוטיות וכרוניות","ליווי מקצועי ביתי או בווידאו"]
+		var words2 = ["תזונה נכונה ומותאמת אישית","זמינות טלפונית","ייעוץ המתאים לכל גיל ילדים, מתבגרים, מבוגרים, הגיל השלישי","התאמה אישית בהתאם למצב הקליני ואורח החיים הפרטי"]
+		
+		var words3 = ["גישה רב-תחומית תזונה פרמקולוגיה אימונולוגיה אנדוקרינולוגיה מדעי המוח וגנטיקה","הכוונה אישית והתייחסות לתא המשפחתי הרלבנטי","ייעוץ לשימוש בקנאביס רפואי","התאמה לאורח החיים מההיבט הבריאותי"]
+        count1 = 0;
+		count2 = 0;
+		count3 = 0;
+		
+			setInterval(function(){ $('#words1').fadeOut(function(){
+            $(this).html(words1[(count1 = (count1 + 1) % words1.length)]).fadeIn();
+          }); }, 5000)
+       
+		  setInterval(function(){ $('#words2').fadeOut(function(){
+            $(this).html(words2[(count2 = (count2 + 1) % words2.length)]).fadeIn();
+          }); }, 5000)
+		  
+		   setInterval(function(){ $('#words3').fadeOut(function(){
+            $(this).html(words3[(count3 = (count3 + 1) % words3.length)]).fadeIn();
+          }); }, 5000)
+		  
+      })();
+	  
+	  
+	
+// vars
+'use strict'
+var testim = document.getElementById("testim"),
+    testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+    testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+    testimleftArrow = document.getElementById("left-arrow"),
+    testimRightArrow = document.getElementById("right-arrow"),
+    testimSpeed = 8500,
+    currentSlide = 0,
+    currentActive = 0,
+    testimTimer
+    ;
+
+window.onload = function () {
+
+    // Testim Script
+    function playSlide(slide) {
+        for (var k = 0; k < testimDots.length; k++) {
+            testimContent[k].classList.remove("active");
+            testimContent[k].classList.remove("inactive");
+            testimDots[k].classList.remove("active");
+        }
+        if (slide < 0) {
+            slide = currentSlide = testimContent.length - 1;
+        }
+        if (slide > testimContent.length - 1) {
+            slide = currentSlide = 0;
+        }
+        if (currentActive != currentSlide) {
+            testimContent[currentActive].classList.add("inactive");
+        }
+        testimContent[slide].classList.add("active");
+        testimDots[slide].classList.add("active");
+
+        currentActive = currentSlide;
+
+        clearTimeout(testimTimer);
+        testimTimer = setTimeout(function () {
+            playSlide(currentSlide += 1);
+        }, testimSpeed)
+    }
+
+    testimleftArrow.addEventListener("click", function () {
+        playSlide(currentSlide -= 1);
+    })
+    testimRightArrow.addEventListener("click", function () {
+        playSlide(currentSlide += 1);
+    })
+
+    for (var l = 0; l < testimDots.length; l++) {
+        testimDots[l].addEventListener("click", function () {
+            playSlide(currentSlide = testimDots.indexOf(this));
+        })
+    }
+    playSlide(currentSlide);
+
+}
+
+	  
+	  
+    </script>
+  
+ <footer class="footer-distributed">
+		<p class="topick">!אל תדחה למחר את מה שאתה יכול לעשות היום</p>
+		<div class="footer-right">
+
+			<p class="footer-links">
+				<a class="link-1" href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/TreatmentsFile.html" >ייעוץ</a>
+				<a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/ConectUsFile.html" >צור קשר</a>
+				<a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/AboutFile.html" >אודותיי</a>
+				<a href="file:///C:/Users/segof/Documents/Shaked/NotepadProjects/Sharon'sWeb/HomeFile.html" >עמוד בית</a>
+			</p>
+			<span id="copyrights" >shaked Goffer &copy; 2022</span>
+			
+			<div class="footer-left">
+				<p class="phone"> 0543231673 <i class="fa fa-phone"></i></p>
+				
+				<a  target="_blank" href="https://he-il.facebook.com/fridepharma/photos" <i class="fab fa-facebook-f"></i> </a>
+				<a  target="_blank" href="https://uk.linkedin.com/in/sharon-anavi-goffer-191b531a8"> <i class="fab fa-linkedin-in"></i></a>
+			</div> 
+		</div>
+		
+		
+		
+		 <img class="iconImg center" src="img/logo.png"/>
+		
+	</footer>
+	
+	<script src="JSCode/basic.js"></script>
+  
+</body>
+</html>

@@ -444,26 +444,20 @@
 	
 	@media (max-width:550px)
 	{
-		#details,#nav-content {margin-top:75px;}
-		header { height: 75px;}
-		#navMenu .bg	{ top:75px;}
+		
 		
 	}
 	
 	@media (max-width:500px)
 	{
-		#details,#nav-content {margin-top:70px;}
-		header { height: 70px;}
-		#navMenu .bg	{ top:70px;}
+		
 		
 	}
 	
 	@media (max-width:450px)
 	{
-		#details,#nav-content {margin-top:65px;}
-		header { height: 65px;}
-		#navMenu .bg	{ top:65px;}
-		#navMenu .button{ margin-right: 15px;}
+		
+		#navMenu .button{ margin-right: 13px;}
 		
 		/*
 		@media (min-height: 500px) 

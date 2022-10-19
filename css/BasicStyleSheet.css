@@ -95,10 +95,9 @@
 		text-align: center;
 		color:blue;
 		font-size:17px;
-		width:80%;
+		width:85%;
 		overflow: auto;
 		margin: auto;
-		padding-bottom:2px;
 
 	}
 	header #name  a
@@ -176,13 +175,13 @@
 	@media (max-width:500px)
 	{
 		header .topick {font-size:30px; }
-		header #name {font-size:17px; margin-bottom:2px;}
+		header #name {font-size:17px;}
 	}
 	
 	@media (max-width:400px)
 	{
 		header .topick {font-size:26px;}
-		header #name {font-size:15px;}
+		header #name {font-size:14px;}
 	}
 	
 	@media (max-width:350px)

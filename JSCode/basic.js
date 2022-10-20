@@ -5,7 +5,7 @@ var menuContent = document.getElementById("nav-content");
 var bgDiv = document.getElementsByClassName("bg")[0];
 var i=0;
 btnMenu.addEventListener("mouseover", func, false);
-btnMenu.addEventListener("mouseleave", hide, false);
+
 
 if (
   navigator.userAgent.match(/Android/i) ||
@@ -44,16 +44,6 @@ function func()
 	}
 }
 
-function hide()
-{  
-	if (
-  navigator.userAgent.match(/Android/i) ||
-  navigator.userAgent.match(/iPhone/i) ) 
-	{
-	  // This checks if the current device is in fact mobile
-	i++;
-	}
-}
 
 
 
